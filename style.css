@@ -1,0 +1,86 @@
+/*
+8d0801
+0a0908
+00509d
+918450
+
+*/
+
+
+body {
+    font-family:'Roboto Mono';
+    background-color:#0A0908;
+    color:aquamarine;
+
+}
+h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+main {
+    width: 30vw;
+    margin: 0 auto;
+}
+section {
+    padding: 20px 0;
+}
+
+
+ img {
+    width: 100%;
+    border: 5px;
+    border-radius: 50%;
+}
+
+h1,h2 {
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+p {
+    text-align: justify;
+}
+
+.card-container {
+    display:flex;
+    justify-content: space-between;
+    grid-gap: 10px;
+}
+
+
+.card {
+    width: 160px;
+    padding: 10px;
+    border: 1px solid#bf0603;
+    border-radius: 6px;
+}
+
+.card ul li {
+    margin-bottom: 6px;
+}
+
+a:-webkit-any-link {
+    color:unset;
+}
+
+
+.rede-social {
+    color:blue;
+    font-size: 33px;
+}
+
+@media (max-width:690px) {
+    body{
+        background-color:#130908;
+    }
+    main{
+        width: 100vw;
+    }
+}
+.img2{
+    width: 10%;
+    border: 5px;
+    border-radius: 50%;
+}
