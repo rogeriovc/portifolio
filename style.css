@@ -20,17 +20,17 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 1.5rem;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   margin-top: 30px;
   margin-bottom: 20px;
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 2.0rem;
 }
 
 a {
@@ -54,7 +54,7 @@ a {
 }
 
 .nome-principal {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #000000;
   margin: 20px 0;
@@ -244,6 +244,20 @@ strong {
   font-weight: bold;
 }
 
+/* URLs para impressão */
+.url-print {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 2px;
+  text-align: center;
+}
+
+@media screen {
+  .url-print {
+    display: none;
+  }
+}
+
 /* Responsividade */
 @media screen and (max-width: 768px) {
   .cards {
@@ -275,14 +289,20 @@ strong {
 
   .contato li {
     padding-right: 0;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.1rem;
   }
 
   .tech-items {
     gap: 15px;
   }
 }
-.headline{
-  font-size: 1.2rem
+
+.headline {
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 480px) {
@@ -304,10 +324,12 @@ strong {
   }
 }
 
-@media print
-{
-  body
-  {
+@media print {
+  body {
     background-color: white;
+  }
+  
+  .url-print {
+    display: block;
   }
 }
