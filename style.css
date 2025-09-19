@@ -92,7 +92,7 @@ a {
   margin-bottom: 12px;
   display: flex;
   align-items: center;
-  padding-right: 59px;
+  padding-right: 6px;
   font-size: 1.1rem;
 }
 
@@ -324,6 +324,8 @@ strong {
   }
 }
 
+
+
 @media print {
   body {
     background-color: white;
@@ -331,5 +333,72 @@ strong {
   
   .url-print {
     display: block;
+  }
+  
+ 
+  .contato ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .contato li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+  
+  
+  .contato a {
+    font-size: 0;
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  
+  
+  .contato .rede-social {
+    display: inline-block !important;
+    font-size: 24px;
+    margin-right: 8px;
+  }
+  
+ 
+  .contato .url-print {
+    display: inline !important;
+    font-size: 0.9rem;
+    margin-left: 0;
+  }
+  
+
+  .contato li div {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+  
+
+  .card a {
+    font-size: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+ 
+  .card .rede-social {
+    display: inline-block !important;
+    font-size: 28px;
+    margin-right: 8px;
+  }
+  
+ 
+  .card .url-print {
+    display: inline !important;
+    font-size: 0.8rem;
+    margin-left: 0;
+    vertical-align: middle;
   }
 }
