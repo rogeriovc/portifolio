@@ -250,6 +250,24 @@ strong {
 }
 
 /* Responsividade */
+@media screen and (max-width: 1024px) {
+  .tech-container {
+    gap: 16px;
+  }
+
+  .tech-category {
+    min-width: 220px;
+  }
+
+  .cards {
+    gap: 16px;
+  }
+
+  .card {
+    min-width: 240px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .cards {
     flex-direction: column;
@@ -257,11 +275,6 @@ strong {
 
   .tech-container {
     flex-direction: column;
-  }
-
-  .foto-portifolio {
-    width: 150px;
-    height: 150px;
   }
 
   .nome-principal {
